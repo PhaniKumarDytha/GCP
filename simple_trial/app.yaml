@@ -1,0 +1,12 @@
+application: banded-setting-124116
+version: phani
+runtime: go
+api_version: go1
+
+handlers:
+- url: /.*
+  script: _go_app
+instance_class: B1
+basic_scaling:
+  max_instances: 1
+  idle_timeout: 10m
