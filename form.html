@@ -1,0 +1,32 @@
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>Demo app</title>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	</head>
+<table width = 100%>
+<tr><td width=5%/>
+	<td width=95%>
+	<table width=100% >
+		<tr>
+			<td width="10%"><img src="https://storage.googleapis.com/mymultiapp/WNC_Logo_HR.jpg" width="50px"></td>
+			<td width="90%"><h8>Demo app for Google DataStore and Cloud SQL</h8></td>
+		</tr>
+	</table>
+	
+	<form action="/save/" method="POST">
+	<br>
+	<table width="80%">
+		<tr><td style="font-size:15px" width="10%">ScripID</td><td> <input type="text" name="ScripID" value={{.ScripID}} style="border-width:1px;style=font-size:15px"/></td></tr>
+		<tr><td style="font-size:15px">Price </td><td>     <input type="text" name="Price" value={{.Price}} style="border-width:1px;style=font-size:15px"/></td></tr>
+		<tr><td style="font-size:15px">High52  </td><td>    <input type="text" name="High52" value={{.High52}} style="border-width:1px;style=font-size:15px"/></td></tr>
+		<tr><td style="font-size:15px">Low52  </td><td>    <input type="text" name="Low52" value={{.Low52}} style="border-width:1px;style=font-size:15px"/></td></tr>
+		<tr><td style="font-size:15px">Upper circuit</td><td>    <input type="text" name="Ucircuit" value={{.Ucircuit}} style="border-width:1px;style=font-size:15px"/></td></tr>
+		<tr><td style="font-size:15px">Lower circuit </td><td> <input type="text" name="Lcircuit" value={{.Lcircuit}} style="border-width:1px;style=font-size:15px"/></td></tr>	
+		<tr><td>Data as at</td><td>{{.Timestamp}}</td></tr>
+		<tr><td/><td><input type="submit" value="Save" style="border-width:1px;style=font-size:5px"> </td></tr>
+	</font>
+	</table>
+	</form>
+<td></tr></table>
+</html>
