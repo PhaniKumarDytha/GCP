@@ -1,4 +1,4 @@
-application: myappmulti
+application: Phani
 module: datastore
 version: alpha
 runtime: go
